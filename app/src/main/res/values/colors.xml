@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#14AA1B</color>
+    <color name="Dgreen">#0C710E</color>
+
+    <color name="background_color">#292C36</color>
+    <color name="button_background">#3E424B</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="text_color">#FFFFFF</color>
+
+        <!-- ... Other color definitions ... -->
+        <color name="button_background_pressed">#5670A6</color>
+        <color name="button_background_focused">#4C5B85</color>
+        <!-- ... Other color definitions ... -->
+
+
+</resources>

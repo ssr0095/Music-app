@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DefaultSongs"
+    android:background="#F2F6F5">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DDE9E7"
+        android:minHeight="?actionBarSize"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />   <!-- toolbar -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Downloads"
+        android:textColor="#444E4D"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <!-- =========================   0  ============================= -->
+
+    <RelativeLayout
+        android:id="@+id/card0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#FBFDFC"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ImageView
+            android:id="@+id/icon0"
+            android:layout_width="25dp"
+            android:layout_height="52dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="zoro"
+            android:src="@drawable/music" />
+
+        <TextView
+            android:id="@+id/title0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="124dp"
+            android:layout_toStartOf="@+id/pause0"
+            android:layout_toEndOf="@id/icon0"
+            android:ellipsize="end"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#444E4D"
+            tools:text="Music" />
+
+        <Button
+            android:id="@+id/play0"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="17dp"
+            android:layout_toStartOf="@+id/pause0"
+            android:background="@drawable/play"
+            app:layout_constraintBottom_toTopOf="@+id/pause0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.006"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.578" />
+
+        <Button
+            android:id="@+id/pause0"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginEnd="-3dp"
+            android:background="@drawable/pause"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+    </RelativeLayout>
+
+    <!-- =========================   1  ============================= -->
+
+    <RelativeLayout
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card0"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#FBFDFC"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="25dp"
+            android:layout_height="52dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="zoro"
+            android:src="@drawable/music" />
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="124dp"
+            android:layout_toStartOf="@+id/pause1"
+            android:layout_toEndOf="@id/icon1"
+            android:ellipsize="end"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#444E4D"
+            tools:text="Music" />
+
+        <Button
+            android:id="@+id/play1"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="17dp"
+            android:layout_toStartOf="@+id/pause1"
+            android:background="@drawable/play"
+            app:layout_constraintBottom_toTopOf="@+id/pause1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.006"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.578" />
+
+        <Button
+            android:id="@+id/pause1"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="-3dp"
+            android:background="@drawable/pause"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+    </RelativeLayout>
+
+    <!-- =========================   2  ============================= -->
+
+    <RelativeLayout
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card1"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#FBFDFC"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="25dp"
+            android:layout_height="52dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="zoro"
+            android:src="@drawable/music" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="124dp"
+            android:layout_toStartOf="@+id/pause2"
+            android:layout_toEndOf="@id/icon2"
+            android:ellipsize="end"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#444E4D"
+            tools:text="Music" />
+
+        <Button
+            android:id="@+id/play2"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="17dp"
+            android:layout_toStartOf="@+id/pause2"
+            android:background="@drawable/play"
+            app:layout_constraintBottom_toTopOf="@+id/pause2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.006"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.578" />
+
+        <Button
+            android:id="@+id/pause2"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="-3dp"
+            android:background="@drawable/pause"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+    </RelativeLayout>
+
+    <!-- =========================   3  ============================= -->
+
+    <RelativeLayout
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card2"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#FBFDFC"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ImageView
+            android:id="@+id/icon3"
+            android:layout_width="25dp"
+            android:layout_height="52dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="zoro"
+            android:src="@drawable/music" />
+
+        <TextView
+            android:id="@+id/title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="124dp"
+            android:layout_toStartOf="@+id/pause3"
+            android:layout_toEndOf="@id/icon3"
+            android:ellipsize="end"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#444E4D"
+            tools:text="Music" />
+
+        <Button
+            android:id="@+id/play3"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="17dp"
+            android:layout_toStartOf="@+id/pause3"
+            android:background="@drawable/play"
+            app:layout_constraintBottom_toTopOf="@+id/pause3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.006"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.578" />
+
+        <Button
+            android:id="@+id/pause3"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="-3dp"
+            android:background="@drawable/pause"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+    </RelativeLayout>
+
+    <!-- =========================   4  ============================= -->
+
+    <RelativeLayout
+        android:id="@+id/card4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card3"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#FBFDFC"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ImageView
+            android:id="@+id/icon4"
+            android:layout_width="25dp"
+            android:layout_height="52dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="zoro"
+            android:src="@drawable/music" />
+
+        <TextView
+            android:id="@+id/title4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="124dp"
+            android:layout_toStartOf="@+id/pause4"
+            android:layout_toEndOf="@id/icon4"
+            android:ellipsize="end"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#444E4D"
+            tools:text="Music" />
+
+        <Button
+            android:id="@+id/play4"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="17dp"
+            android:layout_toStartOf="@+id/pause4"
+            android:background="@drawable/play"
+            app:layout_constraintBottom_toTopOf="@+id/pause4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.006"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.578" />
+
+        <Button
+            android:id="@+id/pause4"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="-3dp"
+            android:background="@drawable/pause"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+    </RelativeLayout>
+
+    <!-- =========================   5  ============================= -->
+
+    <RelativeLayout
+        android:id="@+id/card5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card4"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#FBFDFC"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ImageView
+            android:id="@+id/icon5"
+            android:layout_width="25dp"
+            android:layout_height="52dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="zoro"
+            android:src="@drawable/music" />
+
+        <TextView
+            android:id="@+id/title5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="124dp"
+            android:layout_toStartOf="@+id/pause5"
+            android:layout_toEndOf="@id/icon5"
+            android:ellipsize="end"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#444E4D"
+            tools:text="Music" />
+
+        <Button
+            android:id="@+id/play5"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="17dp"
+            android:layout_toStartOf="@+id/pause5"
+            android:background="@drawable/play"
+            app:layout_constraintBottom_toTopOf="@+id/pause5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.006"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.578" />
+
+        <Button
+            android:id="@+id/pause5"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="-3dp"
+            android:background="@drawable/pause"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+    </RelativeLayout>
+
+    <!-- =========================   6  ============================= -->
+
+    <RelativeLayout
+        android:id="@+id/card6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card5"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#FBFDFC"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ImageView
+            android:id="@+id/icon6"
+            android:layout_width="25dp"
+            android:layout_height="52dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="zoro"
+            android:src="@drawable/music" />
+
+        <TextView
+            android:id="@+id/title6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="124dp"
+            android:layout_toStartOf="@+id/pause6"
+            android:layout_toEndOf="@id/icon6"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:textColor="#444E4D"
+            tools:text="Music" />
+
+        <Button
+            android:id="@+id/play6"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="17dp"
+            android:layout_toStartOf="@+id/pause6"
+            android:background="@drawable/play"
+            app:layout_constraintBottom_toTopOf="@+id/pause6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.006"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.578" />
+
+        <Button
+            android:id="@+id/pause6"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="-3dp"
+            android:background="@drawable/pause"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="124dp"
+        android:ellipsize="end"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="#444E4D"
+        tools:text="Music" />
+</RelativeLayout>

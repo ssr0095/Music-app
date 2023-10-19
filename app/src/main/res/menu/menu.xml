@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:title="Profile"
+        android:id="@+id/profile_icon"
+        android:icon="@drawable/person"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white"
+        app:strokeColor="#513C3C3C"
+        app:strokeWidth="5sp"/>
+
+    <item
+        android:title="Downloads"
+        android:id="@+id/Downloads"
+        app:showAsAction="never" />
+
+    <item
+        android:title="Songs"
+        android:id="@+id/Songs"
+        app:showAsAction="never" />
+
+    <item
+        android:title="Log out"
+        android:id="@+id/logout"
+        app:showAsAction="never" />
+</menu>
